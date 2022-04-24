@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using AppWeb.Models;
+using SalesWebMVC.Models;
 
-namespace AppWeb.Data
+namespace SalesWebMVC.Data
 {
-    public class AppWebContext : DbContext
+    public class SalesWebMVCContext : DbContext
     {
-        public AppWebContext (DbContextOptions<AppWebContext> options)
+        public SalesWebMVCContext (DbContextOptions<SalesWebMVCContext> options)
             : base(options)
         {
         }
 
-        public DbSet<AppWeb.Models.Department> Department { get; set; }
+        public DbSet<SalesWebMVC.Models.Department> Department { get; set; }
     }
 }

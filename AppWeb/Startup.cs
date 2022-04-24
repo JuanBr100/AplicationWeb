@@ -10,9 +10,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using AppWeb.Data;
+using SalesWebMVC.Data;
 
-namespace AppWeb
+namespace SalesWebMVC
 {
     public class Startup
     {
@@ -36,8 +36,8 @@ namespace AppWeb
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<AppWebContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("AppWebContext")));
+            services.AddDbContext<SalesWebMVCContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebMVCContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

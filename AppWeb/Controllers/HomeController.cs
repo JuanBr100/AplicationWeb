@@ -1,5 +1,5 @@
-﻿using AppWeb.Models;
-using AppWeb.Models.ViewModels;
+﻿using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AppWeb.Controllers
+namespace SalesWebMVC.Controllers
 {
     public class HomeController : Controller
     {
